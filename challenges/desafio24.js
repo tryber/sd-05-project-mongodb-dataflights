@@ -6,5 +6,5 @@ db.voos.findOne(
       { litrosCombustivel: { $exists: 1 } },
     ],
   },
-  { "vooId": 1, "litrosCombustivel": 1, "empresa.nome": 1 },
+  { "vooId": 1, "litrosCombustivel": 1, "empresa.nome": 1, '_id': 0 },
 );
