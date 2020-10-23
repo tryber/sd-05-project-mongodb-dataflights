@@ -1,11 +1,11 @@
 // Conte os documentos em que o campo aeroportoDestino.continente não seja igual a EUROPA, ÁSIA e OCEANIA.
 
 db.voos.count({
-  'aeroportoDestino.continente': {
+  "aeroportoDestino.continente": {
     $nin: [
-      'EUROPA',
-      'ÁSIA',
-      'OCEANIA',
+      "EUROPA",
+      "ÁSIA",
+      "OCEANIA",
     ]
   }
 });

@@ -3,7 +3,7 @@
 db.voos.deleteMany({
   $and: [
     {
-      'empresa.nome': 'GOL'
+      "empresa.nome": "GOL"
     },
     { 
       "passageiros.pagos": {
