@@ -5,4 +5,5 @@ db.resumoVoos.insertOne({
     natureza: "Doméstica"
   }),
 });
-  
+
+db.resumoVoos.findOne({ empresa: "PASSAREDO" }, { _id: 0 });
