@@ -1,1 +1,1 @@
-db.voos.count({ ano: 2017}, {ano: 2018});
+db.voos.count({ ano:{$in: [2017, 2018]}});
