@@ -1,4 +1,5 @@
 const empresa = "LATAM AIRLINES BRASIL";
+
 const natureza = "Doméstica";
 
 db.resumoVoos.insertOne({
