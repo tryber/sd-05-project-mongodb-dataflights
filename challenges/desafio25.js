@@ -1,6 +1,6 @@
 db.voos.deleteMany({
   $and: [
-    {"empresa.nome": 'AZUL'},
+    {"empresa.nome": "AZUL"},
     {litrosCombustivel: {$exists: true}},
     {litrosCombustivel: {$lt: 400}},
   ]
