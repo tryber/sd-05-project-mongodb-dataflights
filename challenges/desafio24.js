@@ -4,7 +4,7 @@ db.voos
     {
       $and: [
         { litrosCombustivel: { $lte: 600 } },
-        { "empresa.nome": { $in: ["GOL", "AZUL"] } },
+        { "empresa.nome": { $nin: ["GOL", "AZUL"] } },
         { litrosCombustivel: { $exists: 1 } },
       ],
     },
