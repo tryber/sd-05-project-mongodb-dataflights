@@ -1,0 +1,1 @@
+db.voos.findOne({$or: [{$and: [{"aeroportoOrigem.sigla": {$eq: "SBGR"}}, {"aeroportoDestino.sigla": {$eq: "KJFK"}}]}, {"empresa.nome": {$eq: "DELTA AIRLINES"}}, {"empresa.nome": {$eq: "AMERICAN AIRLINES"}}]}, {_id: 0, vooId: 1});
