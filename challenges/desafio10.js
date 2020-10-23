@@ -7,6 +7,7 @@ db.voos
       "empresa.nome": 1,
       "aeroportoOrigem.nome": 1,
       "ano": 1,
+      "mes":1,
     },
   )
   .limit(10);
