@@ -15,7 +15,5 @@ db.resumoVoos.findOne({
   empresa: "LATAM AIRLINES BRASIL",
 },
 {
-  empesa:1,
-  totalVoosDomesticos: 1,
   _id: 0
 });
