@@ -1,3 +1,3 @@
 db.voos.count({
-  "aeroportoDestino.conitnente": { $ne: ["EUROPA", "ASIA", "OCEANIA"] },
+  "aeroportoDestino.conitnente": { $nin: ["EUROPA", "ASIA", "OCEANIA"] },
 });
