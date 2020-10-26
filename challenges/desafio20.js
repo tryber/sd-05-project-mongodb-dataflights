@@ -1,4 +1,4 @@
 db.voos.find(
-  { "litrosCombustivel": { $exists: true } },
+  { "rtk": { $exists: false } },
   { vooId: 1, _id: 0 }
 ).limit(1);
