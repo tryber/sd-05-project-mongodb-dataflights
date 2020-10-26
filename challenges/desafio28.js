@@ -7,7 +7,7 @@ const tVD = db.voos.count({
 // podia ser escrito também com $and
 
 db.resumoVoos.insertOne({
-  empresa: "PASSAREDO",
+  empresa: "LATAM AIRLINES BRASIL",
   totalVoosDomesticos: tVD,
 });
 
