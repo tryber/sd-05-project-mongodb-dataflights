@@ -2,5 +2,5 @@
 // do que 2016.
 db.voos.count(
   { "ano": { $gt: 2016 } },
-  { "vooId": 1 }
+  {}
 );
