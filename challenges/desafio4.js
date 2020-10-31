@@ -1,2 +1,4 @@
 // Retorne a quantidade de voos da empresa GOL.
-db.voos.count({ "empresa.nome": "GOL" });
+db.voos.count(
+  { "empresa.nome": "GOL" }
+);
