@@ -5,5 +5,3 @@ db.voos.count(
   { "aeroportoDestino.pais": { $ne: "ESTADOS UNIDOS" }  },
   {}
 );
-
-db.inventory.find({ price: { $not: { $gt: 1.99 } } })
