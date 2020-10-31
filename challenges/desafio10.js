@@ -3,14 +3,15 @@
 // Exiba apenas os campos vooId, empresa.nome, 
 // aeroportoOrigem.nome, aeroportoDestino.nome, mes e ano.
 db.voos.find(
-  {
+  { //condição do que procuro
     $and:
       [
         { "empresa.nome": "GOL" },
         { "ano": 2017 }
       ]
   },
-  {
+  { // O que quero mostrar
+    "_id": 0,
     "vooId": 1,
     "empresa.nome": 1,
     "aeroportoOrigem.nome": 1,
