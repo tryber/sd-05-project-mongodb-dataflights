@@ -2,6 +2,8 @@
 // campo aeroportoDestino.pais não seja igual 
 // a ESTADOS UNIDOS.
 db.voos.count(
-  {},
-  {"aeroportoDestino.pais": { $not: [ { $eq: "ESATDOS UNIDOS" } ]}}
+  { "aeroportoDestino.pais": { $ne: "ESTADOS UNIDOS" }  },
+  {}
 );
+
+db.inventory.find({ price: { $not: { $gt: 1.99 } } })

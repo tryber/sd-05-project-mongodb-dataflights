@@ -2,5 +2,5 @@
 // seja menor do que 2017.
 db.voos.count(
   {"ano": { $lt: 2017 }},
-  { "vooId": 1 }
+  {}
 );
