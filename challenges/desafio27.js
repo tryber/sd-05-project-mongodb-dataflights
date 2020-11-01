@@ -12,7 +12,6 @@
 // honestidade acadêmica - aprendi através do PR dos colegas Sid e Juliette que era possível fazer isso:
 // const que armazena o resultado (valor) da contagem de voos;
 
-
 const domesticFlightsCount = db.voos.count({
     "empresa.nome": "PASSAREDO",
     natureza: "Doméstica",
