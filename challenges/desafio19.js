@@ -1,1 +1,2 @@
-db.voos.find({"vooId": 756807}, {"empresa.sigla": 1, "empresa.name": 1, "passageiros": 1, "_id": 0});
+//Retorne o vooId do primeiro voo em que o campo litrosCombustivel exista
+db.voos.find({"litrosCombustivel":{$exists: true}},{"vooId": 1, "_id": 0 }).limit(1);
