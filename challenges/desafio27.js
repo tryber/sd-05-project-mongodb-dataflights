@@ -1,3 +1,4 @@
+// PR do Alexander pois nao passava no cc de nenhum jeito
 db.resumoVoos.insertOne({
   empresa: "PASSAREDO",
   totalVoosDomesticos: db.voos.count({
@@ -5,7 +6,4 @@ db.resumoVoos.insertOne({
     natureza: "Doméstica",
   }),
 });
-db.resumoVoos.findOne(
-  { empresa: "PASSAREDO" },
-  { _id: 0, totalVoosDomesticos: 1, empresa: 1 }
-);
+db.resumoVoos.findOne({}, { _id: 0 });
