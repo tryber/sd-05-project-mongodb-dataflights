@@ -8,3 +8,4 @@ db.resumoVoos.insertOne({
     { _id: false, totalVoosDomesticos: true, empresa: true }
   );
   
+  
