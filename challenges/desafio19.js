@@ -6,4 +6,3 @@ db.voos
       vooId: 1,
     }
   );
-
