@@ -9,4 +9,3 @@ db.voos
     }
   )
   .limit(1);
-  
